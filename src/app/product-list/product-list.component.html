@@ -1,0 +1,13 @@
+<h2>Docxtemplater</h2>
+
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
+<button (click)="onClick()">Upload document</button>
+<input #file hidden="hidden" type="file" onclick="this.value=null;" name="fileName" id="fileId" accept=".docx" (change)="FileEmitter($event.target.files)">
+<br>
+<br>
+<button (click)="generate()">Generate document</button>
